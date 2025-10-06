@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #4A90E2, #A259FF, #4A90E2, #A259FF);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero {
+  padding: 150px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero span {
+  background: linear-gradient(90deg, #4A90E2, #A259FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #4A90E2, #A259FF);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+#contact .underline {
+  width: 120px;
+  height: 4px;
+  margin: 10px auto;
+  background: linear-gradient(90deg, #4A90E2, #A259FF);
+  border-radius: 2px;
+}
+
+footer {
+  padding: 30px;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.2);
+}
